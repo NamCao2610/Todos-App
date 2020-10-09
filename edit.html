@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Apps</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="container">
+                <h1 class="text-center text-danger">Edit Todos</h1>
+            </div>
+        </header>
+
+        <main class="bg-light mb-2 py-4 text-center">
+            <div class="home pb-3">
+                <a href="./index.html" class="text-info">Tro ve trang chu</a>
+            </div>
+            <div class="d-flex justify-content-center">
+                <form>
+                    <div class="form-row" style="width: 20rem;">
+                        <div class="col-3"><label for="text" class="text-danger">Text: </label></div>
+                        <div class="col-9"><input type="text" id="text" class="rounded-pill p-2 border"
+                                style="width: 100%;"></div>
+                    </div>
+
+                    <div class="form-row py-3">
+                        <div class="col">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="completed" id="completed">
+                                <label class="form-check-label text-success" for="completed">
+                                    Hoàn thành
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="completed" id="incompleted">
+                                <label class="form-check-label text-danger" for="incompleted">
+                                    Chưa hoàn thành
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row py-3">
+                        <div class="col text-primary">Lần cập nhật cuối: </div>
+                        <div class="col"><span id="last-updated" class="text-secondary">HEHEHE</span></div>
+                    </div>
+
+                    <div class="form-row py-2">
+                        <div class="col"><button id="remove-todo" class="btn text-light bg-danger">Remove Todo</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <footer class="bg-dark py-2">
+            <p class="text-light text-center p-0">@Design by Nam Cao</p>
+        </footer>
+    </div>
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment-with-locales.min.js"
+        integrity="sha512-EATaemfsDRVs6gs1pHbvhc6+rKFGv8+w4Wnxk4LmkC0fzdVoyWb+Xtexfrszd1YuUMBEhucNuorkf8LpFBhj6w=="
+        crossorigin="anonymous"></script>
+    <script src="./uuidv4.js"></script>
+    <script src="./todo-functions.js"></script>
+    <script src="./todo-edit.js"></script>
+</body>
+
+</html>
